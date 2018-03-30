@@ -1,0 +1,11 @@
+# import Player from "./generated/prisma.graphql"
+
+type Query {
+  players: [ Player!]!
+}
+
+type Mutation {
+  createDraft(title: String!, text: String): Post
+  deletePost(id: ID!): Post
+  publish(id: ID!): Post
+}
